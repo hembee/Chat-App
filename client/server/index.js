@@ -32,6 +32,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen("https://hembee.github.io/Chat-App", () => {
+server.listen("3001", () => {
   console.log("Server Running!!");
 });
