@@ -1,9 +1,15 @@
 import "./App.css";
-import io from "socket.io-client";
+
 import { useState } from "react";
 import Chats from "./components/Chats";
+const io = require("socket.io-client");
 
-const socket = io.connect("https://hembee.github.io/Chat-App");
+const socket = io("https://hembee.github.io/Chat-App", {
+  withCredentials: true,
+  extraHeaders: {
+    "my-custom-header": "Chat App",
+  },
+});
 
 function App() {
   const [username, setUsername] = useState("");
