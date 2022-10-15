@@ -51,8 +51,9 @@ body {
 }
 
 .chat-window {
-  width: 300px;
+  width: 400px;
   height: 720px;
+  background-color: #f6f6f6
 }
 
 .chat-window p {
