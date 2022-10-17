@@ -1,8 +1,10 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background: #263238;
-  color: #212121;
+
+  background: #212121;
+  color: #fff;
+
   font-family: "Open Sans", sans-serif;
   display: grid;
   place-items: center;
@@ -51,9 +53,18 @@ body {
 }
 
 .chat-window {
-  width: 400px;
+
+  width: 500px;
+
   height: 720px;
   background-color: #f6f6f6
+}
+
+@media (max-width: 800px) {
+  .chat-window {
+  width: 100vw;
+  height: 100vh;
+}
 }
 
 .chat-window p {
@@ -75,7 +86,7 @@ body {
 }
 
 .chat-window .chat-body {
-  height: calc(450px - (45px + 70px));
+  height: calc(750px - (45px + 70px));
   border: 1px solid #263238;
   background: #fff;
 
