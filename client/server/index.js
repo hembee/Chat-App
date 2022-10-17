@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://hembee.github.io/Chat-App",
+    origin: "http://localhost:3000",
     methods: ["GET", "POST"],
   },
 });
