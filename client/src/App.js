@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chats from "./components/Chats";
 
-const socket = io.connect("http://localhost:3000");
+const socket = io("http://hembee.github.io/Chat-App");
 
 function App() {
   const [username, setUsername] = useState("");
